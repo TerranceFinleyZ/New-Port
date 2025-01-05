@@ -1,21 +1,13 @@
-
-import BlurBackground from "./components/BlurBackground";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-
+import Main from "./components/main";
 
 export default function App() {
   return (
-    <main className="mx-auto max-w-7xl overflow-x-hidden antialiased">
-      <div className="bg-image fixed inset-0 bg-cover bg-fixed bg-center">
+    <main className="mx-auto max-w-7xl">
         <div className="relative z-10">
-        <BlurBackground />
-          <Navbar />
-          <Hero />
-          <Projects />
+          <main>
+            <Main />
+          </main>
         </div>
-      </div>
     </main>
   )
 }
